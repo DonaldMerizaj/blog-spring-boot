@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="posts">
+
+    <div class="starter-template panel" th:each="post : ${pager.posts}">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <a th:text="${post.title}" th:href="@{'/post/' + ${post.id}}">Title</a>
+            </h3>
+            <div class="col-md-12" style="padding: 8px 12px 18px 0;">
+
+            <span class="small">
+                    <span th:text="'Created at ' + ${post.getCreatedAt()}"></span>
+                    <span th:text="', by '+${post.getId_user().username}"></span>
+                </span>
+
+            <span th:each="postCategory : ${post.getCategories()}">
+                    <span class="tag-name" th:text="${postCategory.getName()}"></span>
+                </span>
+            </div>
+        </div>
+        <p class="panel-body" th:text="${post.getShortDescription()}">Body</p>
+
+        <br>
+        <br>
+    </div>
+</div>
+</body>
+</html>

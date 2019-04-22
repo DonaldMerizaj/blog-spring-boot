@@ -1,0 +1,68 @@
+.custom-header{
+    padding-top:16px;
+    border:none;
+    background: #ffffff;
+}
+
+.main-container{
+    min-height: 200px;
+}
+.menu-container{
+    border-bottom: 1px solid #7e7e7e7e;
+}
+
+#navbar a{
+    border:none;
+    background: #ffffff;
+    color: #555555!important;
+}
+
+.navbar-brand{
+    color: #555555!important;
+}
+
+
+footer {
+    margin-top: 60px;
+}
+
+.validation-message {
+    font-style: normal;
+    font-size: 10px;
+    color: #FF1C19;
+}
+
+a {
+    transition: all .2s;
+}
+
+a:hover, a:focus, a:active {
+    color: purple;
+    text-decoration: none;
+}
+.post-content{
+    padding-bottom: 26px;
+}
+.pagination {
+    display: block;
+    text-align: center;
+}
+.well-sm{
+    border: 1px solid lightgray;
+    border-radius: 13px;
+    padding-left: 24px;
+}
+.panel-title{
+    font-size: 14pt;
+}
+.comment p{
+    font-size: 12pt;
+}
+
+.tag-name{
+    font-size: 9pt;
+    color: black;
+    background-color: lightgray;
+    padding: 6px;
+    border-radius: 10px;
+}
